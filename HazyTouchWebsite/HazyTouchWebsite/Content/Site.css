@@ -1,0 +1,363 @@
+﻿/*Nav bar style setup*/
+
+body {
+    background: #3A3A42;
+    box-sizing: content-box;
+    margin: 0%;
+}
+
+.menu {
+    position: fixed;
+    height: 100vh;
+    background-color: pink;
+    width: 7vw;
+    box-shadow: 1px 0 2px rgba(0,0,0,.2);
+    transition: 1s;
+}
+
+.menu:hover {
+    width: 40vw;
+}
+
+.menu:hover ~ .container {
+    transform: perspective(80vw) rotateY(10deg) translateX(35vw) scaleY(1.2);
+}
+
+.menu:hover nav {
+    left: 20%;
+}
+
+.menu:hover .nav-arrow {
+    opacity: 0;
+}
+
+.container {
+    height: 100vh;
+    margin-left: 8vw;
+    background-image: url("/Images/watercolor_green.jpg");
+    transition: 1s;
+    transform-origin: left center;
+    color: #D2D2D0;
+    background-size: cover;
+}
+
+.content {
+    padding: 100px 20%;
+}
+
+nav {
+    position: absolute;
+    margin-top: 50%;
+    left: -1000px;
+    transition: .5s;
+}
+
+.nav-arrow {
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 30%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 0;
+    height: 0;
+    border-right: 35px solid #569cbd;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+
+.nav-list {
+    color: black;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.nav-item {
+    line-height: 3em;
+    letter-spacing: .3em;
+}
+
+a {
+    margin-top: 0;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #408f92;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+h1 {
+    color: #bbb;
+}
+
+
+/*Footer*/
+
+footer {
+    clear: both;
+    border-top: 1px solid rgba(0,0,0,0);
+    text-align: center;
+    color: white;
+}
+
+#footer-text {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+    #footer-text:hover {
+        opacity: 0.5;
+    }
+
+
+/*Social Media Buttons*/
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-yelp {
+    background: red;
+    color: white;
+}
+
+
+/*Introductory text and animations*/
+
+.intro-text {
+    font-family: Verdana;
+    color: pink;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.elementToFadeInAndOut {
+    -webkit-animation: fadeinout .5s linear forwards;
+    animation: fadeinout 2.5s linear forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+    50% {
+        opacity: 1;
+    }
+}
+
+.main-title {
+    font-family: Verdana;
+    color: pink;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sub-title {
+    font-family: Verdana;
+    color: pink;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.welcome-container {
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    font-family: Arial;
+    height: 100%;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0; /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;  /*this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 2.8s;
+    -moz-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 5.5s;
+    -moz-animation-delay: 5.5s;
+    animation-delay: 5.5s;
+}
+
+
+/*About Page*/
+
+.page-intro-text {
+    font-family: Verdana;
+    color: pink;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+.row {
+    font-size: 40px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 100px;
+}
+
+.headshot {
+    width: 300px;
+    height: 380px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-container {
+    float: left;
+    width: 90%;
+    height: 380px;
+    background-color: lightgrey;
+    border-radius: 7%;
+    /* background-image: linear-gradient(#00cccc, #008080); */
+}
+
+#about-text {
+    color: black;
+    padding: 10px;
+    font-size: 24px;
+}
+
+
+/*Services Page*/
+
+.service-rows {
+    font-size: 40px;
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+#btn-image-1 {
+    background-image: url("/Images/massage.jfif");
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn-image-2 {
+    background-image: url("/Images/massage.jfif");
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn-image-3 {
+    background-image: url("/Images/massage.jfif");
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn-image-4 {
+    background-image: url("/Images/massage.jfif");
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
