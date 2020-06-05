@@ -13,3 +13,6 @@ My personal timeline regarding this project:
   Other goals include refactoring code to remove less redundancies and to place more into the code behind, make the app more accessible to   mobile devices, and to prep a reviews page (should the my client eventually desire to have one).
   
 Thanks and stay tuned!
+
+Update 6/5:
+Finished Services page (still feels a little flat aesthetically, but not a whole lot I can do about that until I get more feedback from the client) so now I will just need to set up a contact page and it should be all set for initial implementation.  My overall progress will begin to slow next friday as my regular work will begin back up, but I will just take that into account when making new goals.
