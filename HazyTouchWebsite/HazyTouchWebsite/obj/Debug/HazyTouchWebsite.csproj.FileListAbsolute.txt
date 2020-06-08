@@ -156,3 +156,5 @@ C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouc
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.csproj.CopyComplete
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.dll
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.pdb
+C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.Properties.Resources.resources
+C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.csproj.GenerateResource.cache
