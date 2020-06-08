@@ -361,3 +361,73 @@ footer {
     padding: 10px;
     font-family: Candara;
 }
+
+
+/*Contact Page*/
+
+
+.form-container {
+    width: 45%;
+    height: 60%;
+    background-color: lightgrey;
+    border-radius: 7%;
+    font-family: Candara;
+    margin: auto;
+    color: black;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.contact-form {
+    max-width: 65%;
+    max-height: 70%;
+    margin: auto;
+}
+
+.feedback-input {
+    color: white;
+    font-family: Candara, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: white;
+    border: 1px solid #569cbd;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    margin-top: 15px;
+}
+
+.feedback-input:focus {
+    border: 2px solid darkcyan;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: Candara, Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: pink;
+    border-radius: 5px;
+    border: 1px solid #569cbd;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+    [type="submit"]:hover {
+        background: #e75480;
+    }
