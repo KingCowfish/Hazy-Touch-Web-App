@@ -16,3 +16,8 @@ Thanks and stay tuned!
 
 Update 6/5:
 Finished Services page (still feels a little flat aesthetically, but not a whole lot I can do about that until I get more feedback from the client) so now I will just need to set up a contact page and it should be all set for initial implementation.  My overall progress will begin to slow next friday as my regular work will begin back up, but I will just take that into account when making new goals.
+
+Update 6/13:
+So hit a little bit of a snag and a visual studio update completely rewrote my bootstrap fiddling (as I wanted to use boostrap for the modals, but wanted to remove the other parts that were conteracting my own Site.css) so I am going to have to find a more permanent solution.  
+
+Otherwise, I am going to look into learning more about Azure in order to better test my contact page.  So my current goals are to rework the CSS to make my use of bootstrap more permanent and then to take a course on Azure.  Once those are done, I will update this.  
