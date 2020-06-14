@@ -20,4 +20,7 @@ Finished Services page (still feels a little flat aesthetically, but not a whole
 Update 6/13:
 So hit a little bit of a snag and a visual studio update completely rewrote my bootstrap fiddling (as I wanted to use boostrap for the modals, but wanted to remove the other parts that were conteracting my own Site.css) so I am going to have to find a more permanent solution.  
 
-Otherwise, I am going to look into learning more about Azure in order to better test my contact page.  So my current goals are to rework the CSS to make my use of bootstrap more permanent and then to take a course on Azure.  Once those are done, I will update this.  
+Otherwise, I am going to look into learning more about Azure in order to better test my contact page.  So my current goals are to rework the CSS to make my use of bootstrap more permanent and then to take a course on Azure.  Once those are done, I will update this. 
+
+Update 6/14:
+So bootstrap proved too unwieldly to maintain (I would fix something only for something else to break) so I decided to remove it.  This proved to be a better decision than I had originally intended as I realize I have far more options now and will be updating the services view with far more interesting modals.  Will begin to update once I figure out what sort of modals I want to use.  
