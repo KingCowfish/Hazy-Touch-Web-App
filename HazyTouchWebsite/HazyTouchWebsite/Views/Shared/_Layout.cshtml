@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Site.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body id="layout-body">
+<body>
     @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -34,11 +34,11 @@
         @RenderBody()
 
     </div>
-    <footer>
+    <footer class="footer">
         <br />
         <a href="http://linkedin.com/in/kelly-krug-a4a003104" class="fa fa-linkedin" target="_blank"></a>
         @*Hide until business is on Yelp
-        <a href="#" class="fa fa-yelp"></a>*@
+            <a href="#" class="fa fa-yelp"></a>*@
         <br />
         <br />
         <a id="footer-text" href="https://public.orlicensing.oregon.gov/OBMTPublic/LicensePublicRecord.aspx?Board=OBMT&LicenseType=LMT&LicenseNo=24445"
@@ -46,10 +46,11 @@
         <br />
         <br />
         <p>Copyright: 2020  |  Kelly Krug  |  LMT #24445</p>
-        
+
     </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/custom")
     @RenderSection("scripts", required: false)
 </body>
 </html>
