@@ -1,6 +1,6 @@
 ﻿/*Nav bar style setup*/
 
-body {
+#layout-body {
     background: #3A3A42;
     box-sizing: content-box;
     margin: 0%;
@@ -38,7 +38,7 @@ body {
     transition: 1s;
     transform-origin: left center;
     color: #D2D2D0;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .content {
