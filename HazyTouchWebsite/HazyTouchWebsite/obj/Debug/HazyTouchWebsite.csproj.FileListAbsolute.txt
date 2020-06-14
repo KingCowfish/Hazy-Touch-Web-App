@@ -151,10 +151,10 @@ C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\bin\System.Web.Web
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\bin\Newtonsoft.Json.xml
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\bin\Antlr3.Runtime.pdb
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.csprojAssemblyReference.cache
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.csproj.CoreCompileInputs.cache
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.csproj.CopyComplete
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.dll
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.pdb
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.Properties.Resources.resources
 C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.csproj.GenerateResource.cache
+C:\Repos\Hazy-Touch-Web-App\HazyTouchWebsite\HazyTouchWebsite\obj\Debug\HazyTouchWebsite.csprojAssemblyReference.cache
