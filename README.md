@@ -24,3 +24,6 @@ Otherwise, I am going to look into learning more about Azure in order to better 
 
 Update 6/14:
 So bootstrap proved too unwieldly to maintain (I would fix something only for something else to break) so I decided to remove it.  This proved to be a better decision than I had originally intended as I realize I have far more options now and will be updating the services view with far more interesting modals.  Will begin to update once I figure out what sort of modals I want to use.  
+
+Update 6/16:
+Figured out the JavaScript so now the modals will open appropriately.  Next stop is to fix the css which is a total mess as even the code snippets that I got the idea for the modals from didn't work fully.  My hope is to get it done and cleaned by the end of the week (hopefully sooner, but we shall have to see).
