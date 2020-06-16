@@ -442,7 +442,7 @@ footer {
     transform: rotateY(-180deg);
 }
 
-    .back .content {
+    .back .modal-content {
         transform: rotateY(180deg);
     }
 
@@ -457,7 +457,6 @@ footer {
     cursor: pointer;
     width: 25px;
     height: 25px;
-    background: url(http://i63.tinypic.com/1671taq.png) no-repeat center;
     background-size: cover;
     opacity: .6;
 }
