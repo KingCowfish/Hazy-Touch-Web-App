@@ -1,25 +1,46 @@
-﻿// Get the modal
-var modal = document.getElementById("myModal");
+﻿$('.button').click(function () {
+	$(this).hide();
+	$('.front').addClass('front-open');
+	$('.back').addClass('back-open');
+	$('.opened').addClass('opened-open');
+	$('.modal').show();
+	setTimeout(function () {
+		$('.modal').addClass('shadow');
+	}, 1000);
+	setTimeout(function () {
+		$('.front').removeClass('front-open');
+		$('.back').removeClass('back-open');
+		$('.opened').removeClass('opened-open');
+	}, 1200);
+	$('.wrapper').delay(500).fadeIn();
+});
 
-// Get the button that opens the modal
-var btn = document.getElementById();
+$('.close').click(function () {
+	$('.wrapper').fadeOut(300);
+	$('.modal').removeClass('shadow');
+	$('.front').addClass('front-close');
+	$('.back').addClass('back-close');
+	$('.opened').addClass('opened-close');
+	setTimeout(function () {
+		$('.modal').hide();
+		$('.button').show();
+		$('.front').removeClass('front-close');
+		$('.back').removeClass('back-close');
+		$('.opened').removeClass('opened-close');
+	}, 1100)
+})
 
-// Get the <span> element that closes the modal
-var closebtn = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-
-// When the user clicks on the close button, close the modal
-closebtn.onclick = function () {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+$('.wrapper').click(function () {
+	$('.wrapper').fadeOut(300);
+	$('.modal').removeClass('shadow');
+	$('.front').addClass('front-close');
+	$('.back').addClass('back-close');
+	$('.opened').addClass('opened-close');
+	setTimeout(function () {
+		$('.modal').hide();
+		$('.button').show();
+		$('.front').removeClass('front-close');
+		$('.back').removeClass('back-close');
+		$('.opened').removeClass('opened-close');
+	}, 1100)
+})
