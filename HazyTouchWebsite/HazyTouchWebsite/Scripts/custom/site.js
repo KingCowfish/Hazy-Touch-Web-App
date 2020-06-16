@@ -1,9 +1,10 @@
 ﻿$('.button').click(function () {
-	$(this).hide();
+	var modal = $(this).data("modal");
+	$('.button').hide();
 	$('.front').addClass('front-open');
 	$('.back').addClass('back-open');
 	$('.opened').addClass('opened-open');
-	$('.modal').show();
+	$(modal).show();
 	setTimeout(function () {
 		$('.modal').addClass('shadow');
 	}, 1000);
