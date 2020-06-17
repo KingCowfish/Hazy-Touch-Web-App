@@ -320,13 +320,11 @@ footer {
 /*Services Page*/
 
 .service-rows {
-    font-size: 40px;
-    height: 70%;
+    height: 60%;
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-row-gap: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row-gap: 25px;
 }
 
 .service-container {
@@ -335,38 +333,13 @@ footer {
     align-items: center;
 }
 
-#service-btn {
-    background-image: url("/Images/massage.jfif");
-    width: 395px;
-    height: 250px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-}
-
-#service-btn-text {
-    color: black;
-    font-family: Candara;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: darkgrey;
-    padding: 0;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 7%;
-}
 
 
 /*Modal Window*/
 
 .button {
-    background-image: -webkit-radial-gradient(circle, #e2f0cb, #9bd151);
-    background-image: -moz-radial-gradient(circle, #e2f0cb, #9bd151);
-    background-image: -ms-radial-gradient(circle, #e2f0cb, #9bd151);
-    background-image: radial-gradient(circle, #e2f0cb, #9bd151);
-    width: 265px;
+    background-image: radial-gradient(circle, #e2f0cb, #d2c999);
+    width: 260px;
     height: 265px;
     box-sizing: border-box;
     text-align: center;
@@ -376,9 +349,24 @@ footer {
     transition: all .4s;
 }
 
-    .button:hover {
-        box-shadow: 0 0 30px rgba(50, 49, 79, 0.5);
+.btn-image {
+    width: 280px;
+    height: 265px;
+}
+
+    .btn-image:hover {
+        box-shadow: 0 0 30px #fde70f;
     }
+
+.btn-text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 .modal {
     width: 530px;
@@ -391,12 +379,26 @@ footer {
     display: none;
 }
 
+.modal-header {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: Candara;
+    color: black;
+    text-align: center;
+}
+
+.modal-text {
+    font-size: 15px;
+    font-family: Candara;
+    color: black;
+}
+
 .shadow {
     box-shadow: 0 0 30px rgba(50, 49, 79, 0.5);
 }
 
 .wrapper {
-    background: rgba(50, 49, 79, 0.5);
+    background: rgba(0, 128, 128, 0.3);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -414,10 +416,7 @@ footer {
 }
 
 .front {
-    background-image: -webkit-radial-gradient(circle, #e2f0cb, #9bd151);
-    background-image: -moz-radial-gradient(circle, #e2f0cb, #9bd151);
-    background-image: -ms-radial-gradient(circle, #e2f0cb, #9bd151);
-    background-image: radial-gradient(circle, #e2f0cb, #9bd151);
+    background-image: radial-gradient(circle, #e2f0cb, #d2c999);
     width: 265px;
     text-align: center;
     padding-top: 5px;
@@ -459,6 +458,7 @@ footer {
     height: 25px;
     background-size: cover;
     opacity: .6;
+    color: black;
 }
 
 .front-open {
