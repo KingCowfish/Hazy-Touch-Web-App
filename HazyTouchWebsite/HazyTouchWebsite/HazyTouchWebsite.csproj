@@ -149,10 +149,13 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\fall_image.jpg" />
     <Content Include="Images\KellyKrug_and_Cat.jpg" />
-    <Content Include="Images\massage.jfif" />
+    <Content Include="Images\spring_image.jpg" />
+    <Content Include="Images\summer_image.jpg" />
     <Content Include="Images\watercolor_green.jpg" />
     <Content Include="fonts\Coves Light.otf.lnk" />
+    <Content Include="Images\winter_image.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
