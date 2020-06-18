@@ -10,7 +10,7 @@ body {
     position: fixed;
     height: 100vh;
     background-color: pink;
-    width: 7vw;
+    width: 6vw;
     box-shadow: 1px 0 2px rgba(0,0,0,.2);
     transition: 1s;
 }
@@ -33,7 +33,7 @@ body {
 
 .container {
     height: 100vh;
-    margin-left: 8vw;
+    margin-left: 7vw;
     background-image: url("/Images/watercolor_green.jpg");
     transition: 1s;
     transform-origin: left center;
@@ -345,13 +345,14 @@ footer {
     text-align: center;
     padding-top: 5px;
     cursor: pointer;
-    box-shadow: 0 0 21px rgba(50, 49, 79, 0.3);
+    box-shadow: 0 0 21px rgba(0,0,0,.3);
     transition: all .4s;
 }
 
 .btn-image {
     width: 280px;
     height: 265px;
+    box-shadow: 0 0 21px rgba(0,0,0,.4);
 }
 
     .btn-image:hover {
@@ -359,13 +360,11 @@ footer {
     }
 
 .btn-text {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
+    font-family: Candara;
+    font-weight: 900;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 24px;
+    text-align: center;
 }
 
 .modal {
@@ -457,8 +456,9 @@ footer {
     width: 25px;
     height: 25px;
     background-size: cover;
-    opacity: .6;
     color: black;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .front-open {
