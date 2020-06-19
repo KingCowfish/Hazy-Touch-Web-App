@@ -1,4 +1,19 @@
-﻿$('.button').click(function () {
+﻿//$('.button').click(function () {
+//    if ($(this).attr("trigger") === "0") {
+//        $(this).animate({
+//            position: 'absolute',
+//            top: 'calc(50 % - 132.5px)',
+//            left: 'calc(50 % - 265px)' }, 700);
+//        $(this).attr("trigger", "1");
+//    }
+//    else {
+//        $(this).animate({ "left": "0px" }, 700);
+//        $(this).attr("trigger", "0");
+//    }
+//});
+
+
+$('.button').click(function () {
 	var modal = $(this).data("modal");
 	$('.button').hide();
 	$('.front').addClass('front-open');
