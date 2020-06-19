@@ -29,4 +29,7 @@ Update 6/16:
 Figured out the JavaScript so now the modals will open appropriately.  Next stop is to fix the css which is a total mess as even the code snippets that I got the idea for the modals from didn't work fully.  My hope is to get it done and cleaned by the end of the week (hopefully sooner, but we shall have to see).
 
 Update 6/17: 
-Polished the modals and they are looking pretty good.  I'd like to add text on top of them but despite my best efforts (and even with the guidance of various online tutorials), I have not gotten it to work.  I will probably post it to stack overflow if I can't figure it out on codepen.  I'd also like to make the transitions in and out of the modals to be less severe.  Besides those two things, the page is pretty much done (barring feedback from my client).  
+Polished the modals and they are looking pretty good.  I'd like to add text on top of them but despite my best efforts (and even with the guidance of various online tutorials), I have not gotten it to work.  I will probably post it to stack overflow if I can't figure it out on codepen.  I'd also like to make the transitions in and out of the modals to be less severe.  Besides those two things, the page is pretty much done (barring feedback from my client). 
+
+Update 6/18:
+Decided to leave the text below the buttons as putting it on top would force me to darken the images on the buttons and lose their pop.  I also added a more interesting background image to the modal windows.  Tomorrow will be about smoothing the transitions.
