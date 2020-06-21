@@ -33,3 +33,6 @@ Polished the modals and they are looking pretty good.  I'd like to add text on t
 
 Update 6/18:
 Decided to leave the text below the buttons as putting it on top would force me to darken the images on the buttons and lose their pop.  I also added a more interesting background image to the modal windows.  Tomorrow will be about smoothing the transitions.
+
+Update 6/20:
+Made some progress in smoothing the transitions, but they still are not working the way I want them to.  I have posted my questions on overstack but have yet to receive any replies about it.  Otherwise, everything is done on the services page.  From here, I will probably start looking into Azure so that I can test my contacts page, make the contacts page actually presentable, and go about polishing up the other pages (the services page is significantly more interesting than the other pages, though part of that is due to my client not giving me the data I need to work with).
