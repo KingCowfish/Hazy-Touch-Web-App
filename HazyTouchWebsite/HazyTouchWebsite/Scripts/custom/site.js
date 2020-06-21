@@ -1,21 +1,6 @@
-﻿//$('.button').click(function () {
-//    if ($(this).attr("trigger") === "0") {
-//        $(this).animate({
-//            position: 'absolute',
-//            top: 'calc(50 % - 132.5px)',
-//            left: 'calc(50 % - 265px)' }, 700);
-//        $(this).attr("trigger", "1");
-//    }
-//    else {
-//        $(this).animate({ "left": "0px" }, 700);
-//        $(this).attr("trigger", "0");
-//    }
-//});
-
-
-$('.button').click(function () {
+﻿$('.button').click(function () {
 	var modal = $(this).data("modal");
-	$('.button').hide();
+	$(this).hide();
 	$('.front').addClass('front-open');
 	$('.back').addClass('back-open');
 	$('.opened').addClass('opened-open');
@@ -60,3 +45,25 @@ $('.wrapper').click(function () {
 		$('.opened').removeClass('opened-close');
 	}, 1100)
 })
+
+
+
+
+//outline for smothing out modal transition.  waiting to hear back
+//from overstack.com as it currently does not work.
+
+//$('.button').click(function () {
+//	if ($(this).attr("trigger") === "0") {
+//		$(this).animate({
+//			left: $(window).width() / 2,
+//			top: $(window).height() / 2
+//		}, 100, function () {
+//				$(this).hide();
+//		});
+//		$(this).attr("trigger", "1");
+//	}
+//	else {
+//		$(this).animate({ "left": "0px" }, 100);
+//		$(this).attr("trigger", "0");
+//	}
+//});

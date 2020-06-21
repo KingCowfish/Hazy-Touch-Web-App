@@ -334,10 +334,10 @@ footer {
 }
 
 
-
 /*Modal Window*/
 
 .button {
+    position: absolute;
     background-image: radial-gradient(circle, #e2f0cb, #d2c999);
     width: 260px;
     height: 265px;
@@ -364,8 +364,10 @@ footer {
     font-weight: 900;
     color: white;
     font-size: 24px;
-    font-style: italic; 
+    font-style: italic;
     text-align: center;
+    margin-top: 380px;
+    margin-left: 20px;
 }
 
 .modal {
@@ -398,7 +400,7 @@ footer {
 }
 
 .wrapper {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/Images/ripple_image.jpg);
+    background-image: url(/Images/ripple_image.jpg);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -436,7 +438,7 @@ footer {
 }
 
 .back {
-    background: #f2f2f2;
+    background: white;
     transform-origin: 50% 50%;
     transform: rotateY(-180deg);
 }
@@ -446,7 +448,7 @@ footer {
     }
 
 .opened {
-    background: #f2f2f2;
+    background: white;
 }
 
 .close {
