@@ -36,3 +36,6 @@ Decided to leave the text below the buttons as putting it on top would force me 
 
 Update 6/20:
 Made some progress in smoothing the transitions, but they still are not working the way I want them to.  I have posted my questions on overstack but have yet to receive any replies about it.  Otherwise, everything is done on the services page.  From here, I will probably start looking into Azure so that I can test my contacts page, make the contacts page actually presentable, and go about polishing up the other pages (the services page is significantly more interesting than the other pages, though part of that is due to my client not giving me the data I need to work with).
+
+Update 6/22:
+Made some big aesthetic changes which I am really happy about.  Besides learning about Azure in order to implement and test the contact page (and actually building said contacts page), the app is pretty much done.  Unfortunately, GitHub decided to explode on me and not only prevent me from pushing all of these changes to the remote repository (meaning here), but it won't even let me clone repositories.  So something is super wrong and I will be working to fix that.  Once I figure out that mess, then I will push the changes up and begin learning Azure.
