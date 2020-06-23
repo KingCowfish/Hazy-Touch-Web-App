@@ -1,44 +1,49 @@
-﻿/*Nav bar style setup*/
-
-body {
-    background: #3A3A42;
+﻿body {
+    background: #002b40;
     box-sizing: content-box;
     margin: 0%;
+    overflow-x: hidden;
 }
+
+
+/*Nav bar style setup*/
 
 .menu {
     position: fixed;
     height: 100vh;
-    background-color: pink;
+    background-color: #0c5c62;
     width: 6vw;
     box-shadow: 1px 0 2px rgba(0,0,0,.2);
     transition: 1s;
+    z-index: 2;
 }
 
-.menu:hover {
-    width: 40vw;
-}
+    .menu:hover {
+        width: 40vw;
+    }
 
-.menu:hover ~ .container {
-    transform: perspective(80vw) rotateY(10deg) translateX(35vw) scaleY(1.2);
-}
+        .menu:hover ~ .container {
+            transform: perspective(80vw) rotateY(10deg) translateX(35vw) scaleY(1.2);
+        }
 
-.menu:hover nav {
-    left: 20%;
-}
+        .menu:hover nav {
+            left: 20%;
+        }
 
-.menu:hover .nav-arrow {
-    opacity: 0;
-}
+        .menu:hover .nav-arrow {
+            opacity: 0;
+        }
 
 .container {
     height: 100vh;
-    margin-left: 7vw;
-    background-image: url("/Images/watercolor_green.jpg");
+    margin-left: 6.5vw;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/Images/fog-landscape.jpg");
     transition: 1s;
     transform-origin: left center;
     color: #D2D2D0;
     background-size: 100%;
+    overflow: hidden;
+    z-index: 0;
 }
 
 .content {
@@ -60,14 +65,13 @@ nav {
     transition: all 0.3s ease;
     width: 0;
     height: 0;
-    border-right: 35px solid #569cbd;
+    border-right: 35px solid #ffb9de;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
 }
 
 
 .nav-list {
-    color: black;
     text-transform: uppercase;
     list-style-type: none;
 }
@@ -81,13 +85,13 @@ a {
     margin-top: 0;
     font-size: 30px;
     text-decoration: none;
-    color: black;
+    color: #ffb9de;
     font-weight: 600;
 }
 
-a:hover {
-    color: #408f92;
-}
+    a:hover {
+        color: #a5638f;
+    }
 
 p {
     line-height: 1.5em;
@@ -95,6 +99,382 @@ p {
 
 h1 {
     color: #bbb;
+}
+
+/* ---------- Fog ---------- */
+.fogwrapper {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+    filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+}
+
+#foglayer_01, #foglayer_02, #foglayer_03 {
+    height: 100%;
+    position: absolute;
+    width: 200%;
+}
+
+    #foglayer_01 .image01, #foglayer_01 .image02,
+    #foglayer_02 .image01, #foglayer_02 .image02,
+    #foglayer_03 .image01, #foglayer_03 .image02 {
+        float: left;
+        height: 100%;
+        width: 50%;
+    }
+
+#foglayer_01 {
+    -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+    -moz-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+    animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+}
+
+#foglayer_02, #foglayer_03 {
+    -webkit-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+    -moz-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+    animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+}
+
+/* ---------- Moving Fog ---------- */
+
+#foglayer_01 .image01, #foglayer_01 .image02 {
+    background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog1.png") center center/cover no-repeat transparent;
+}
+
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02 {
+    background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog2.png") center center/cover no-repeat transparent;
+}
+
+/* ---------- Keyframe Layer 1 ---------- */
+@-webkit-keyframes foglayer_01_opacity {
+    0% {
+        opacity: .1;
+    }
+
+    22% {
+        opacity: .5;
+    }
+
+    40% {
+        opacity: .28;
+    }
+
+    58% {
+        opacity: .4;
+    }
+
+    80% {
+        opacity: .16;
+    }
+
+    100% {
+        opacity: .1;
+    }
+}
+
+@-moz-keyframes foglayer_01_opacity {
+    0% {
+        opacity: .1;
+    }
+
+    22% {
+        opacity: .5;
+    }
+
+    40% {
+        opacity: .28;
+    }
+
+    58% {
+        opacity: .4;
+    }
+
+    80% {
+        opacity: .16;
+    }
+
+    100% {
+        opacity: .1;
+    }
+}
+
+@-o-keyframes foglayer_01_opacity {
+    0% {
+        opacity: .1;
+    }
+
+    22% {
+        opacity: .5;
+    }
+
+    40% {
+        opacity: .28;
+    }
+
+    58% {
+        opacity: .4;
+    }
+
+    80% {
+        opacity: .16;
+    }
+
+    100% {
+        opacity: .1;
+    }
+}
+
+@keyframes foglayer_01_opacity {
+    0% {
+        opacity: .1;
+    }
+
+    22% {
+        opacity: .5;
+    }
+
+    40% {
+        opacity: .28;
+    }
+
+    58% {
+        opacity: .4;
+    }
+
+    80% {
+        opacity: .16;
+    }
+
+    100% {
+        opacity: .1;
+    }
+}
+/* ---------- Keyframe Layer 2 ---------- */
+@-webkit-keyframes foglayer_02_opacity {
+    0% {
+        opacity: .5;
+    }
+
+    25% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@-moz-keyframes foglayer_02_opacity {
+    0% {
+        opacity: .5;
+    }
+
+    25% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@-o-keyframes foglayer_02_opacity {
+    0% {
+        opacity: .5;
+    }
+
+    25% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes foglayer_02_opacity {
+    0% {
+        opacity: .5;
+    }
+
+    25% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+/* ---------- Keyframe Layer 3 ---------- */
+@-webkit-keyframes foglayer_03_opacity {
+    0% {
+        opacity: .8
+    }
+
+    27% {
+        opacity: .2;
+    }
+
+    52% {
+        opacity: .6;
+    }
+
+    68% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@-moz-keyframes foglayer_03_opacity {
+    0% {
+        opacity: .8
+    }
+
+    27% {
+        opacity: .2;
+    }
+
+    52% {
+        opacity: .6;
+    }
+
+    68% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@-o-keyframes foglayer_03_opacity {
+    0% {
+        opacity: .8
+    }
+
+    27% {
+        opacity: .2;
+    }
+
+    52% {
+        opacity: .6;
+    }
+
+    68% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@keyframes foglayer_03_opacity {
+    0% {
+        opacity: .8;
+    }
+
+    27% {
+        opacity: .2;
+    }
+
+    52% {
+        opacity: .6;
+    }
+
+    68% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+/* ---------- Keyframe moveMe ---------- */
+@-webkit-keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@-moz-keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@-o-keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+    #foglayer_01 .image01, #foglayer_01 .image02,
+    #foglayer_02 .image01, #foglayer_02 .image02,
+    #foglayer_03 .image01, #foglayer_03 .image02 {
+        width: 100%;
+    }
 }
 
 
@@ -105,6 +485,7 @@ footer {
     border-top: 1px solid rgba(0,0,0,0);
     text-align: center;
     color: white;
+    margin-left: 7vw;
 }
 
 #footer-text {
@@ -154,7 +535,7 @@ footer {
 
 .intro-text {
     font-family: Verdana;
-    color: pink;
+    color: #ffb9de;
     text-align: center;
     font-size: 50px;
     margin-bottom: 0;
@@ -181,7 +562,7 @@ footer {
 
 .main-title {
     font-family: Coves, Verdana;
-    color: pink;
+    color: #ffb9de;
     text-align: center;
     font-size: 100px;
     margin-top: 0;
@@ -192,7 +573,7 @@ footer {
 
 .sub-title {
     font-family: Verdana;
-    color: pink;
+    color: #ffb9de;
     text-align: center;
     font-size: 30px;
     margin-top: 20px;
@@ -244,7 +625,7 @@ footer {
     -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
     -moz-animation: fadeIn ease-in 1;
     animation: fadeIn ease-in 1;
-    -webkit-animation-fill-mode: forwards;  /*this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -webkit-animation-fill-mode: forwards; /*this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
     -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     -webkit-animation-duration: 1s;
@@ -252,30 +633,30 @@ footer {
     animation-duration: 1s;
 }
 
-.fade-in.one {
-    -webkit-animation-delay: 2.8s;
-    -moz-animation-delay: 2.8s;
-    animation-delay: 2.8s;
-}
+    .fade-in.one {
+        -webkit-animation-delay: 2.8s;
+        -moz-animation-delay: 2.8s;
+        animation-delay: 2.8s;
+    }
 
-.fade-in.two {
-    -webkit-animation-delay: 4s;
-    -moz-animation-delay: 4s;
-    animation-delay: 4s;
-}
+    .fade-in.two {
+        -webkit-animation-delay: 4s;
+        -moz-animation-delay: 4s;
+        animation-delay: 4s;
+    }
 
-.fade-in.three {
-    -webkit-animation-delay: 5.5s;
-    -moz-animation-delay: 5.5s;
-    animation-delay: 5.5s;
-}
+    .fade-in.three {
+        -webkit-animation-delay: 5.5s;
+        -moz-animation-delay: 5.5s;
+        animation-delay: 5.5s;
+    }
 
 
 /*About Page*/
 
 .page-intro-text {
     font-family: Verdana;
-    color: pink;
+    color: #ffb9de;
     text-align: center;
     font-size: 50px;
     margin-top: 0;
@@ -313,7 +694,7 @@ footer {
 #about-text {
     color: black;
     padding: 10px;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 
@@ -374,7 +755,7 @@ footer {
     width: 530px;
     height: 265px;
     perspective: 2000px;
-    z-index: 2;
+    z-index: 4;
     position: absolute;
     top: calc(50% - 132.5px);
     left: calc(50% - 265px);
@@ -407,6 +788,7 @@ footer {
     top: 0;
     left: 0;
     display: none;
+    z-index: 3
 }
 
 .front,
@@ -565,9 +947,9 @@ footer {
     margin-top: 15px;
 }
 
-.feedback-input:focus {
-    border: 2px solid darkcyan;
-}
+    .feedback-input:focus {
+        border: 2px solid darkcyan;
+    }
 
 textarea {
     height: 150px;
@@ -578,7 +960,7 @@ textarea {
 [type="submit"] {
     font-family: Candara, Arial, Helvetica, sans-serif;
     width: 100%;
-    background: pink;
+    background: #ffd2ea;
     border-radius: 5px;
     border: 1px solid #569cbd;
     cursor: pointer;
