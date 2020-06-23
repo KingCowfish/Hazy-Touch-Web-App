@@ -39,3 +39,6 @@ Made some progress in smoothing the transitions, but they still are not working 
 
 Update 6/22:
 Made some big aesthetic changes which I am really happy about.  Besides learning about Azure in order to implement and test the contact page (and actually building said contacts page), the app is pretty much done.  Unfortunately, GitHub decided to explode on me and not only prevent me from pushing all of these changes to the remote repository (meaning here), but it won't even let me clone repositories.  So something is super wrong and I will be working to fix that.  Once I figure out that mess, then I will push the changes up and begin learning Azure.
+
+Update 6/23:
+Well all my changes have been pushed up here so that is good, however, I have no idea what changed to make it work (as I didn't really do anything)/I feel like there may be some issues that need to be resolved.  Still, I'm not gonna look a gift horse in the mouth.  Next is checking with my client to see if she approves of the changes, and if I am given the go ahead, I will begin learning Azure.  Don't expect any updates for a little while.
