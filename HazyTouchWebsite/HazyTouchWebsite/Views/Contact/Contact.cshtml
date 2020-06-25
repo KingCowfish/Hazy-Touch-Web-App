@@ -1,4 +1,25 @@
-﻿@*@model HazyTouchWebsite.ViewModels.ContactViewModel
+﻿@model HazyTouchWebsite.ViewModels.ContactViewModel
+@{
+    ViewBag.Title = "Contact";
+}
+
+<h1 class="page-intro-text">Contact</h1>
+
+<section class="form-container">
+    <p class="form-text">
+        If you'd like to schedule an appointment or ask a question, feel free
+        to fill out use the form below.&nbsp;&nbsp;Looking forward to hearing from you!
+    </p>
+    <form method="post" class="contact-form">
+        <input type="text" class="form-control" placeholder="Name" required>
+        <input type="text" class="form-control" placeholder="Email" required>
+        <input type="text" class="form-control" placeholder="Subject" required>
+        <textarea rows="3" type="text" class="area-control" placeholder="Your message goes here" required></textarea>
+        <button type="submit" class="submit-button">Send</button>
+    </form>
+</section>
+
+@*@model HazyTouchWebsite.ViewModels.ContactViewModel
     @{
         ViewBag.Title = "Contact";
     }
@@ -22,69 +43,64 @@
     }
 *@
 
-@model HazyTouchWebsite.ViewModels.ContactViewModel
-@{
-    ViewData["Title"] = "Home Page";
-}
-
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<div>
-    <div class="col-md-6">
-        <div>
-            @if (ViewBag.Message == null)
-            {
-                <div>
-                    <form method="post">
-                        <div class="form-group">
-                            <label asp-for="Name">Name</label>
-                            <input asp-for="Name" class="form-control" />
-                            <span asp-validation-for="Name"
-                                  class="text-muted"></span>
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="Email">Email</label>
-                            <input asp-for="Email" class="form-control" />
-                            <span asp-validation-for="Email"
-                                  class="text-muted"></span>
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="Subject">Subject</label>
-                            <input asp-for="Subject" class="form-control" />
-                            <span asp-validation-for="Subject"
-                                  class="text-muted"></span>
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="Message">Message</label>
-                            <textarea rows="5" cols="15"
-                                      asp-for="Message" class="form-control"></textarea>
-                            <span asp-validation-for="Message"
-                                  class="text-muted"></span>
-                        </div>
-                        <div>
-                            <button type="submit"
-                                    class="btn btn-success">
-                                Send
-                            </button>
-                        </div>
-
-                    </form>
-                </div>
-            }
-        </div>
-
-        <div>
+@*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <div>
+        <div class="col-md-6">
             <div>
-                @if (ViewBag.Message != null)
+                @if (ViewBag.Message == null)
                 {
-                    <div>@ViewBag.Message</div>
+                    <div>
+                        <form method="post">
+                            <div class="form-group">
+                                <label asp-for="Name">Name</label>
+                                <input asp-for="Name" class="form-control" />
+                                <span asp-validation-for="Name"
+                                      class="text-muted"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Email">Email</label>
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email"
+                                      class="text-muted"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Subject">Subject</label>
+                                <input asp-for="Subject" class="form-control" />
+                                <span asp-validation-for="Subject"
+                                      class="text-muted"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Message">Message</label>
+                                <textarea rows="5" cols="15"
+                                          asp-for="Message" class="form-control"></textarea>
+                                <span asp-validation-for="Message"
+                                      class="text-muted"></span>
+                            </div>
+                            <div>
+                                <button type="submit"
+                                        class="btn btn-success">
+                                    Send
+                                </button>
+                            </div>
 
-
+                        </form>
+                    </div>
                 }
             </div>
-        </div>
-    </div>
 
-</div>
+            <div>
+                <div>
+                    @if (ViewBag.Message != null)
+                    {
+                        <div>@ViewBag.Message</div>
+
+
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>*@
 
 
 
