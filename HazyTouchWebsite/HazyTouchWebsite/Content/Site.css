@@ -534,7 +534,6 @@ footer {
 }
 
 .intro-text {
-    font-family: Verdana;
     color: #ffb9de;
     text-align: center;
     font-size: 50px;
@@ -572,7 +571,6 @@ footer {
 }
 
 .sub-title {
-    font-family: Verdana;
     color: #ffb9de;
     text-align: center;
     font-size: 30px;
@@ -656,7 +654,6 @@ footer {
 /*About Page*/
 
 .page-intro-text {
-    font-family: Verdana;
     color: #ffb9de;
     text-align: center;
     font-size: 50px;
