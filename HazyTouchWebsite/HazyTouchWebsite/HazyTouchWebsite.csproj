@@ -152,6 +152,7 @@
     <Content Include="Images\fall_image.jpg" />
     <Content Include="Images\fog-landscape.jpg" />
     <Content Include="Images\KellyKrug_and_Cat.jpg" />
+    <EmbeddedResource Include="Images\KK_headshot.jpg" />
     <Content Include="Images\spring_image.jpg" />
     <Content Include="Images\summer_image.jpg" />
     <Content Include="Images\ripple_image.jpg" />

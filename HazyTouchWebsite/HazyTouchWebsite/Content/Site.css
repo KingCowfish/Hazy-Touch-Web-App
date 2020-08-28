@@ -672,7 +672,7 @@ footer {
 
 .headshot {
     position: relative;
-    width: 300px;
+    width: 380px;
     height: 380px;
     border-radius: 50%;
     display: block;
@@ -695,8 +695,9 @@ footer {
 
 #about-text {
     color: black;
-    padding: 10px;
-    font-size: 21px;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 5px;
 }
 
 
