@@ -42,3 +42,6 @@ Made some big aesthetic changes which I am really happy about.  Besides learning
 
 Update 6/23:
 Well all my changes have been pushed up here so that is good, however, I have no idea what changed to make it work (as I didn't really do anything)/I feel like there may be some issues that need to be resolved.  Still, I'm not gonna look a gift horse in the mouth.  Next is checking with my client to see if she approves of the changes, and if I am given the go ahead, I will begin learning Azure.  Don't expect any updates for a little while.
+
+Update 8/28:
+Well hey!  A small update!  Finally got to make some changes as the client sent me more information to add to the site.  Expect more to come.  Unfortunately, work has been rough lately, so I will be adding things rather slowly.
